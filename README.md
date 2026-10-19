@@ -49,6 +49,10 @@ Load case: **1,000 N·mm torsion plus 1,000 N lateral force** at the hub, the pe
 
 ## Topology optimisation (Altair SimLab, SIMP)
 
+![Topology optimisation iterations](images/topology-iterations.gif)
+
+*SIMP element-density field evolving over the solver iterations. Blue elements are removable; red/yellow form the load paths that are kept.*
+
 | Element density | Optimised geometry |
 |---|---|
 | ![Density](images/topology-density.png) | ![Shape](images/optimised-shape.png) |
@@ -61,6 +65,14 @@ Load case: **1,000 N·mm torsion plus 1,000 N lateral force** at the hub, the pe
 | ![Pre](images/stress-pre.png) | ![Post](images/stress-post.png) |
 
 **Acceptance criteria and standards used:** ISO 12100 (σ_vm below yield; minimal material for the required safety level), ISO 13482 / ISO 10218-1 (FOS ≥ 1.5 for robot structures), ISO 12107 (fatigue), and ISO 2768-m (displacement within the tolerance band). An FMEA was used to evaluate the toolpath changes.
+
+## CAD files
+
+| File | Contents |
+|---|---|
+| [`cad/flange-original.SLDPRT`](cad/flange-original.SLDPRT) | Original flange plate used for the CAM setup (SOLIDWORKS 2022) |
+| [`cad/flange-topology-optimised.SLDPRT`](cad/flange-topology-optimised.SLDPRT) | Redesigned plate after topology optimisation |
+| [`cad/flange-topology-optimised.STEP`](cad/flange-topology-optimised.STEP) | Same part as STEP AP214, opens in any CAD tool |
 
 ## Tools
 
